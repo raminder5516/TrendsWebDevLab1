@@ -1,0 +1,123 @@
+/****************************************************
+ * TABLE OF CONTENTS
+ ****************************************************
+ * 1. GENERAL STYLES
+ * 2. HEADER
+ * 3. MENUS
+ * -- 3a. Main menu
+ * 4. SIDEBARS
+ */
+
+/* 1. GENERAL STYLES */
+html {
+  box-sizing:border-box; /*standard model is content-box*/
+}
+*, *::before, *::after {
+  box-sizing:inherit;
+}
+body {
+  background-color:#dedede;
+/*   margin:0; */
+}
+.page {
+  max-width:1024px;
+  background-color:#fff;
+  margin:0 auto; /* this is the same as 0 auto 0 auto */
+}
+.hidden {
+  position:absolute;
+  left:-10000px;
+}
+a.button {
+  background-color:#333;
+  color:#fff;
+  padding:0.5em 0.8em;
+  text-decoration:none;
+  border-radius:5px 15px;
+}
+#header, main, #sidebar-one, #sidebar-two, #footer {
+  padding:1em;
+}
+/* 2. HEADER */
+#header {
+  border:1px dashed blue;
+  margin-bottom:1em;
+}
+#site-name {
+  text-align:center;
+}
+#site-name::before {
+  content:'{';
+}
+#site-name::after {
+  content:'}';
+}
+/* 3. MENUS */
+/* -- 3a. Main menu */
+#main-menu ul {
+  list-style:none;
+  padding-left:0;
+}
+#main-menu li {
+  display:inline-block;
+  margin-right:1.5em;
+}
+main, #sidebar-one, #sidebar-two {
+  margin-bottom:1em;
+}
+main {
+  border:1px dashed pink;
+  width:50%;
+  display:inline-block;
+  margin:0 2.5%;
+}
+#sidebar-one {
+  border:1px dashed yellow;
+  width:22.5%;
+  float:left;
+}
+#sidebar-two {
+  border:1px dashed orange;
+  width:22.5%;
+  float:right;
+}
+#footer {
+  border:1px dashed green;
+  clear:both;
+}
+.list-block-title {
+  background-color:#f00;
+  color:#fff;
+  font:normal 1em/1 Arial,Helvetica,sans-serif;
+  padding:0.2em 0.5em;
+  text-transform:uppercase;
+  margin-bottom:0;
+}
+.list-block {
+  margin-top:0;
+  list-style:none;
+  padding-left:0;
+}
+.list-block li {
+  padding:0.2em 0.5em;
+  border-bottom:1px solid red;
+}
+.list-block li a {
+  text-decoration:none;
+  color:#333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
